@@ -24,7 +24,7 @@ mem_t *initMem(){
 }
 
 // allocates space in bytes (byte_t) using First-Fit, Best-Fit or Worst-Fitaddress_t
-myAlloc(mem_t *mp, int sz){
+int myAlloc(mem_t *mp, int sz){
   
 }
 
