@@ -19,14 +19,23 @@ typedef struct {
 }mem_t;
 
 // dynamically allocates a mem_t structure and initializes its content
-mem_t *initMem();
+mem_t *initMem(){
+
+}
 
 // allocates space in bytes (byte_t) using First-Fit, Best-Fit or Worst-Fitaddress_t
-myAlloc(mem_t *mp, int sz);
+myAlloc(mem_t *mp, int sz){
+  
+}
 
 // release memory that has already been allocated previously
-void myFree(mem_t *mp, address_t p, int sz); // assign a value to a byte
-void myWrite(mem_t *mp, address_t p, byte_t val); // read memory from a byte
+void myFree(mem_t *mp, address_t p, int sz){
+  printf("BITE\n");
+} // assign a value to a byte
+void myWrite(mem_t *mp, address_t p, byte_t val){
+
+
+} // read memory from a byte
 byte_t myRead(mem_t *mp, address_t p);
 
 #endif
@@ -34,9 +43,9 @@ byte_t myRead(mem_t *mp, address_t p);
 int main(){
 
   mem_t *men = initMem();
-  adresse_t adr1 = myAlloc(mem, 5);
-  adresse_t adr2 = myAlloc(mem, 10);
-  adresse_t adr3 = myAlloc(mem, 100);
+  address_t adr1 = myAlloc(mem, 5);
+  address_t adr2 = myAlloc(mem, 10);
+  address_t adr3 = myAlloc(mem, 100);
 
   myFree(mem, adr2, 10);
   myFree(mem, adr1, 5);
@@ -44,6 +53,6 @@ int main(){
   myWrite(mem, adr3, 543); // Write on the 1byte
   myWrite(mem, adr3+9, 34); // Write on the 10th byte
 
-  byte_t val1 = myRead(mem, adre3);
-  byte_t val2 = myRead(mem, adre3+9);
+  byte_t val1 = myRead(mem, adr3);
+  byte_t val2 = myRead(mem, adr3+9);
 }
