@@ -1,4 +1,5 @@
-[![HitCount](http://hits.dwyl.io/adritoo/Operating-Systems.svg)](http://hits.dwyl.io/adritoo/Operating-Systems)
+[![HitCount](http://hits.dwyl.com/adritoo/Operating-Systems.svg)](http://hits.dwyl.com/adritoo/Operating-Systems)
+
 # Operating System
 
 The different courses and practical work of the first semester are grouped together here.
